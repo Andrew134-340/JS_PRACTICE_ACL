@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz 1 Practice</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container">
+	<script>
+		document.write("<h1>Compute the following given a = 100 and b = 10</h1>");
+	</script>
+</div>
+
+<div class="container">
+	<script>
+		var a = 100, b = 10, result;
+		result = a ** b;
+	</script>
+
+	<h1>Computation for 100 to the power of 10</h1>
+	<h1 id="answer1"></h1>
+	<button type="button" class="btn btn-primary" onclick="document.getElementById('answer1').innerHTML = 'Answer: ' + result;">THE ANSWER!</button>
+</div>
+
+<div class="container">
+	<h1>Is a greater than b?</h1>
+	<script>
+		var greater = a > b; // Simple comparison to determine if a > b
+	</script>
+
+	<h1 id="answer2"></h1>
+	<button type="button" class="btn btn-warning" onclick="document.getElementById('answer2').innerHTML = 'Answer: ' + (greater ? 'Yes' : 'No');">THE ANSWER!</button>
+</div>
+
+<div class="container">
+	<h1>Is this statement correct (a <= b) && (a >= b)?</h1>
+	<script>
+		var isCorrect = (a <= b) && (a >= b); // Logical condition evaluation
+	</script>
+
+	<h1 id="answer3"></h1>
+	<button type="button" class="btn btn-success" onclick="document.getElementById('answer3').innerHTML = 'Answer: ' + (isCorrect ? 'True' : 'False');">THE ANSWER!</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
